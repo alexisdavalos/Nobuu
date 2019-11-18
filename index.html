@@ -4,9 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Minimalist Home Page</title>
+    <link href="css/index.css" rel="stylesheet">
 </head>
+<header>
+<nav>
+        <div class="logo"><h2>Minimalist Home Page</h2></div>
+        <div class="links-wrapper">
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Blog</a>
+                <a href="#">Contact</a>
+                <a href="#">Sign In</a>
+            </div>   
+        </div> 
+        </nav>
+</header>
 <body>
-    
+<section class="home-slider-section">
+    <div class="slider-content">
+        <img class="mySlides" src="img_la.jpg">
+        <img class="mySlides" src="img_ny.jpg">
+        <img class="mySlides" src="img_chicago.jpg">
+    </div>
+</section>
+
+<section class="section-2">
+    <h2>Title 1</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos in delectus doloremque debitis tenetur veniam magni recusandae officiis molestiae tempore. Commodi consectetur distinctio quos! Harum sapiente assumenda optio laborum repellat!</p>
+</section>
+
+<section class="section-3">
+    <h2>Title 2</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos in delectus doloremque debitis tenetur veniam magni recusandae officiis molestiae tempore. Commodi consectetur distinctio quos! Harum sapiente assumenda optio laborum repellat!</p>
+</section>
+<footer>
+    <nav>
+            <a href=""></a>
+        </nav>
+    <p>Copyright Minimalist Home Page 2019</p>
+
+    <script>
+            var myIndex = 0;
+            carousel();
+            
+            function carousel() {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              myIndex++;
+              if (myIndex > x.length) {myIndex = 1}    
+              x[myIndex-1].style.display = "block";  
+              setTimeout(carousel, 4000); // Change image every 2 seconds
+            }
+            </script>
+
+</footer>
 </body>
 </html>

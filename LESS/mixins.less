@@ -1,0 +1,26 @@
+// Mixins Here
+.custom-layout(@justify, @align){
+    display:flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+.clean-anchor(){
+    text-decoration: none;
+}
+
+//buttons 
+.custom-btn(@bg-color, @width, @height, @font-color, @font-size, @border-radius){
+    color:@font-color;
+    background-color:@bg-color;
+    width:@width;
+    cursor:pointer;
+    margin: 0;
+    height:@height;
+    font-size:@font-size;
+    border-radius:@border-radius;
+    display:block;
+    &:hover{
+        background-color:@font-color;
+        color:@bg-color;
+    }
+}
