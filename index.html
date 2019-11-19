@@ -8,8 +8,8 @@
     <link href="css/index.css" rel="stylesheet">
 </head>
 <header>
-<nav>
-        <div class="logo"><h2>Minimalist Home Page</h2></div>
+    <nav>
+        <div class="logo"><h2>NOBUU</h2></div>
         <div class="links-wrapper">
             <div class="links">
                 <a href="index.html">Home</a>
@@ -22,46 +22,68 @@
         </nav>
 </header>
 <body>
-<section class="home-slider-section">
-    <div class="slider-content">
-        <img class="mySlides" src="img_la.jpg">
-        <img class="mySlides" src="img_ny.jpg">
-        <img class="mySlides" src="img_chicago.jpg">
-    </div>
-</section>
+<div class="container">
+    <section class="home-slider-section">
+        <div class="slider">
+            <img class="mySlides" src="https://images.pexels.com/photos/1054222/pexels-photo-1054222.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1000">
+            <img class="mySlides" src="https://images.pexels.com/photos/751373/pexels-photo-751373.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+            <img class="mySlides" src="https://images.pexels.com/photos/1054222/pexels-photo-1054222.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+        </div>
+    </section>
 
-<section class="section-2">
-    <h2>Title 1</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos in delectus doloremque debitis tenetur veniam magni recusandae officiis molestiae tempore. Commodi consectetur distinctio quos! Harum sapiente assumenda optio laborum repellat!</p>
-</section>
+    
+    
+    <section class="section-2">
+    <div id="particles-js"></div>
+        <div class="content">
+            <h2>Title 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos in delectus doloremque debitis tenetur veniam magni recusandae officiis molestiae tempore. Commodi consectetur distinctio quos! Harum sapiente assumenda optio laborum repellat!</p>
+        </div>
+      
+    </section>
+    
+    <section class="section-3">
+        <div class="content">
+                <h2>Title 1</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos in delectus doloremque debitis tenetur veniam magni recusandae officiis molestiae tempore. Commodi consectetur distinctio quos! Harum sapiente assumenda optio laborum repellat!</p>
+            </div>
+    </section>
+    <footer>
+            <nav>
+                    <a href=""></a>
+                </nav>
+            <p>Copyright Minimalist Home Page 2019</p>
+        
+            <script>
+                    var myIndex = 0;
+                    carousel();
+                    
+                    function carousel() {
+                      var i;
+                      var x = document.getElementsByClassName("mySlides");
+                      for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";  
+                      }
+                      myIndex++;
+                      if (myIndex > x.length) {myIndex = 1}    
+                      x[myIndex-1].style.display = "block";  
+                      setTimeout(carousel, 5000); // Change image every 2 seconds
+                    }
+                    </script>
+        
+        </footer>
+</div>
 
-<section class="section-3">
-    <h2>Title 2</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos in delectus doloremque debitis tenetur veniam magni recusandae officiis molestiae tempore. Commodi consectetur distinctio quos! Harum sapiente assumenda optio laborum repellat!</p>
-</section>
-<footer>
-    <nav>
-            <a href=""></a>
-        </nav>
-    <p>Copyright Minimalist Home Page 2019</p>
+	<!-- Scripts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.scrollex.min.js"></script>
+    <script src="js/jquery.scrolly.min.js"></script>
+    <script src="js/browser.min.js"></script>
+    <script src="js/breakpoints.min.js"></script>
+    <script src="js/util.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/Particles/particles.js"></script>
+    <script src="js/Particles/app.js"></script>
 
-    <script>
-            var myIndex = 0;
-            carousel();
-            
-            function carousel() {
-              var i;
-              var x = document.getElementsByClassName("mySlides");
-              for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";  
-              }
-              myIndex++;
-              if (myIndex > x.length) {myIndex = 1}    
-              x[myIndex-1].style.display = "block";  
-              setTimeout(carousel, 4000); // Change image every 2 seconds
-            }
-            </script>
-
-</footer>
 </body>
 </html>
