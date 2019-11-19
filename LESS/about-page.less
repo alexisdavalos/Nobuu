@@ -1,24 +1,44 @@
+body {
+    background-color: @secondary-color;
+}
 
+.team_content_section {
+    padding: 5%;
 
-.tm_content {
-    .custom-layout(space-between, stretch);
-    width: 100%;
+    .team_member {
+        width: 80%;
+        margin: auto;
+        padding: 5%;
     
-}
-
-.tm_header img{
-    display: inline-block;
-    width: 50%;
     
+        .tm_content {
+            .custom-layout(space-between, stretch);
+            width: 100%;
+            align-items: center;
+            
+        
+            .tm_header {
+                h3 {
+                    text-align: center;
+                    
+                }
+            
+                img{
+                    display: inline-block;
+                    width: 100%;
+                    
+                }
+            }
+        
+        }
+    }
+
+
+    .bio {
+        text-align: center;
+        padding-top: auto 0;
+    }
 }
 
-.profile-pic {
-    display: flex;
-    max-height: 20px;
 
-    
-}
 
-.bio {
-    text-align: center;
-}
