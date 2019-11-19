@@ -1,0 +1,35 @@
+header{
+    .custom-layout(center,center);
+    background: @main-color;
+    width:100%;
+    position:fixed;
+    nav{
+        .custom-layout(center,center);
+        width:75%;
+        padding: 1% 0;
+        .logo{
+            .custom-layout(flex-start,center);
+            width:50%;
+            h2{
+                color:@white;
+            }
+        }
+        .links-wrapper{
+            .custom-layout(flex-end,center);
+            width:50%;
+            .links{
+                .custom-layout(space-evenly,center);
+                width:100%;
+                a{
+                    .clean-anchor();
+                    font-size: 1.4rem;
+                    text-transform: uppercase;
+                    color: @white;
+                }
+            
+            }
+        }
+        
+    }
+}
+    

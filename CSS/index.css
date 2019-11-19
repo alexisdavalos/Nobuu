@@ -1,3 +1,13 @@
+<<<<<<< HEAD
+=======
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto Italic'), local('Roboto-Italic'), url(https://fonts.gstatic.com/s/roboto/v20/KFOkCnqEu92Fr1Mu51xIIzc.ttf) format('truetype');
+}
+>>>>>>> 31c2004a85079b84e2d870fa710ae4c3298d2bb0
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -126,6 +136,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+<<<<<<< HEAD
 a {
   text-decoration: none;
 }
@@ -145,4 +156,103 @@ a {
 }
 .bio {
   text-align: center;
+=======
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+  color: black;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Roboto', sans-serif;
+  color: black;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+section {
+  display: block;
+}
+.container {
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.content {
+  padding: 20%;
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #17252A;
+  width: 100%;
+  position: fixed;
+}
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+  padding: 1% 0;
+}
+header nav .logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 50%;
+}
+header nav .logo h2 {
+  color: #FEFFFF;
+}
+header nav .links-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 50%;
+}
+header nav .links-wrapper .links {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+header nav .links-wrapper .links a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: #FEFFFF;
+}
+.home-slider-section {
+  width: 100%;
+}
+.home-slider-section .slider .mySlides {
+  height: 100vh;
+  width: 100%;
+  display: none;
+}
+#particles-js {
+  height: 100vh;
+  width: 100%;
+  background-color: #30363d;
+  position: absolute;
+  z-index: -1;
+>>>>>>> 31c2004a85079b84e2d870fa710ae4c3298d2bb0
 }
