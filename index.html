@@ -9,7 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
     <script src="https://kit.fontawesome.com/a9a54486bf.js" crossorigin="anonymous"></script>
 </head>
-<header>
+<header id="navBar">
     <nav>
         <div class="logo active"><a href="index.html"><h2>NOBUU</h2></a></div>
         <div class="links-wrapper">
@@ -20,45 +20,46 @@
                 <a href="#">Contact</a>
                 <a href="#">Sign In</a>
 
-            </div>
-            <div class="mobile-links" id="mobile-links">
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About Us</a>
-                    <a href="#">Blog</a>
-                    <a href="#">Contact</a>
-                    <a href="#">Sign In</a>
-                </div>      
-
-            </div>   
-
+            </div>    
         </div>
+        <div class="mobile-links" id="mobile-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="#">Blog</a>
+                <a href="#">Contact</a>
+                <a href="#">Sign In</a>
+            </div>   
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
               </a>
         </nav>
 </header>
-<body>
+<body onload="startTime()">
 <div class="container">
     <section class="home-slider-section">
         <div class="slider">
             <img class="mySlides" src="img/1.jpg">
+            <img class="mySlides" src="img/2.jpg">
+            <img class="mySlides" src="img/3.jpg">
+            <img class="mySlides" src="img/4.jpg">
         </div>
         <div class="box-wrapper">
                 <div class="box">
-                        <h2>What is your main focus for today?</h2>
+                        <div id="clock"></div>
+                        <div class="Greeting"><h2>Good <span id="Day"></span>, classy.</h2></div>
                         <div class="typed">
-                            <span id="typed"></span>
+                         <h3>Daily <span id="typed"></span> on your new tab page</h3> 
                         </div>   
                     </div> 
                 <div class="icon-box">
                         <div class="icon">
-                            <i class="fab fa-github fa-2x"></i>
+                           <a href="https://github.com/Buildweek-Minimalist-Homepage" target="_blank"><i class="fab fa-github fa-3x"></i></a>
                         </div>
                         <div class="icon">
-                                <i class="fab fa-facebook fa-2x"></i>
+                                <a href="https://github.com/Buildweek-Minimalist-Homepage" target="_blank"><i class="fab fa-facebook fa-3x"></i></a>
                             </div>
                             <div class="icon">
-                                    <i class="fab fa-twitter fa-2x"></i>
+                                    <a href="https://github.com/Buildweek-Minimalist-Homepage" target="_blank"><i class="fab fa-twitter fa-3x"></i></a>
                                 </div>
                 </div>   
             </div>
@@ -67,7 +68,10 @@
     
     
     <section class="section-2">
-    <div id="particles-js"></div>
+    <!-- <div id="particles-js"></div> -->
+        <div class="">
+            <h2></h2>
+        </div>
         <div class="content">
             <h2>Title 1</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos in delectus doloremque debitis tenetur veniam magni recusandae officiis molestiae tempore. Commodi consectetur distinctio quos! Harum sapiente assumenda optio laborum repellat!</p>

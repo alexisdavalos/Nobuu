@@ -1,11 +1,24 @@
+h2{
+    @media @phone{
+        font-size: 1.5rem;
+    }
+    @media @tablet{
+        font-size: 1.9rem;
+    }
+}
 .home-slider-section{
     .custom-layout(center,center);
-    margin-top:-50px;
     .slider{
         width:100%;
-        height:100%;
         position:absolute;
+        top:0;
         z-index: -1;
+        @media @phone{
+            height: auto;
+        }
+        @media @tablet{
+            height: auto;
+        }
         .mySlides{
             width:100%;
             height:100%;
@@ -16,27 +29,69 @@
     .box-wrapper{
         height:100%;
         width:100%;
-        padding:25%;
+        padding:10%;
+        @media @tablet{
+            padding: 5%;
+        }
+        @media @phone{
+            padding: 2.5%;
+        }
         .custom-layout(center,center);
         width:100%;
         flex-direction:column;
         .box{
+            #clock{
+                font-size: 10rem;
+                color:white;
+                font-family: 'Roboto', sans-serif;
+                font-weight:600;
+                @media @tablet{
+                    font-size: 5rem;
+                }
+                @media @phone{
+                    font-size: 2.5rem;
+                }
+                
+            }//end clock
+            .Greeting{
+                margin-top:2%;
+            }
             .custom-layout(center,center);
             width:100%;
             height:100%;
             flex-direction:column;
-            h2{
+            h2,h3{
                 color:@white;
+                text-align:center;
             }
             h3{
-                border-bottom: 3px solid white;
+               
             }
             .typed{
                 width:50%;
-                margin-top: 1%;
+                margin-top: 5%;
                 color: @white;
                 font-size:1.8rem;
-                border-bottom:solid white 3px;
+                background:#0000008c;
+                padding: 1%;
+                h3{
+                    @media @phone{
+                        font-size: 1.3rem;
+                      
+                    }
+                    @media @tablet{
+                  
+                        font-size: 1.8rem;
+                    }
+                }
+                @media @phone{
+                    font-size: 1.3rem;
+                    width:75%;
+                }
+                @media @tablet{
+                    width:75%;
+                    font-size: 1rem;
+                }
                 
                 
             }
@@ -52,6 +107,10 @@
             }
         }
     }//end box-wrapper
+}
+
+.section-2{
+
 }
 #particles-js{
 	height: 100vh;
