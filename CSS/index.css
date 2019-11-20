@@ -235,12 +235,12 @@ body {
   background-color: #2B7A78;
 }
 .team_content_section {
-  padding: 5%;
+  padding: 3%;
 }
 .team_content_section .team_member {
-  width: 80%;
+  width: 70%;
   margin: auto;
-  padding: 5%;
+  padding-bottom: 3% 0;
 }
 .team_content_section .team_member .tm_content {
   display: flex;
@@ -255,6 +255,9 @@ body {
 .team_content_section .team_member .tm_content .tm_header img {
   display: inline-block;
   width: 100%;
+}
+.team_content_section .team_member .tm_content .bio {
+  padding: 5%;
 }
 .team_content_section .bio {
   text-align: center;
