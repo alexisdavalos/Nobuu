@@ -378,6 +378,7 @@ header nav .icon {
 .team_content_section .team_member .tm_content .tm_header img {
   display: inline-block;
   width: 100%;
+  border-radius: 50%;
 }
 .team_content_section .bio {
   text-align: center;
