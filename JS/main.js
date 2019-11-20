@@ -23,7 +23,7 @@ var typed = new Typed('#typed', {
 
 //mobile menu
 function myFunction() {
-  var x = document.getElementById("links");
+  var x = document.getElementById("mobile-links");
   if (x.style.display === "block") {
     x.style.display = "none";
   } else {

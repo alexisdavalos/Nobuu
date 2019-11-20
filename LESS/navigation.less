@@ -23,6 +23,9 @@ header{
         .links-wrapper{
             .custom-layout(flex-end,center);
             width:50%;
+            .mobile-links{
+                display:none;
+            }
             .links{
                 .custom-layout(space-evenly,center);
                 width:100%;
@@ -38,6 +41,9 @@ header{
             
             }
         }
+        .icon{
+            display:none;
+        }
         
     }
 }
@@ -48,6 +54,7 @@ header{
 nav {
     overflow: hidden;
     position: relative;
+    flex-direction:column;
     .links{
         display:none;
     }

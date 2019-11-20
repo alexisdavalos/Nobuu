@@ -170,6 +170,7 @@ section {
   width: 100%;
   margin: 0 auto;
   overflow: hidden;
+  padding-top: 75px;
 }
 .content {
   padding: 20%;
@@ -212,6 +213,9 @@ header nav .links-wrapper {
   align-items: center;
   width: 50%;
 }
+header nav .links-wrapper .mobile-links {
+  display: none;
+}
 header nav .links-wrapper .links {
   display: flex;
   justify-content: space-evenly;
@@ -229,11 +233,15 @@ header nav .links-wrapper .links a {
   text-transform: uppercase;
   color: #FEFFFF;
 }
+header nav .icon {
+  display: none;
+}
 @media (max-width: 500px) {
   /* Style the navigation menu */
   nav {
     overflow: hidden;
     position: relative;
+    flex-direction: column;
   }
   nav .links {
     display: none;
@@ -327,7 +335,7 @@ header nav .links-wrapper .links a {
   background-color: #30363d;
   z-index: -1;
 }
-body {
+.container {
   background-color: #2B7A78;
 }
 .team_content_section {
