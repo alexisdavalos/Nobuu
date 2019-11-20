@@ -1,25 +1,51 @@
 .about-container {
     background-color: @secondary-color;
+<<<<<<< HEAD
+    padding-top: 75px;
+=======
     padding-top:75px;
+>>>>>>> 5ccd722f6d2a3ea43a9f4e7917cfa25322bfc196
 }
+
+.about-header-image {
+    
+    
+    img {
+    max-width: 80%;
+    margin: auto;
+    display:block;
+    }
+
+}
+.mission {
+    margin:auto;
+    width: 80%;
+    padding-top: 20px;
+} 
+
 
 .team_content_section {
     padding: 3%;
 
+    .team-intro-header h1{
+        text-align: center;
+        font-size: 4rem;
+        padding: 3%;
+    }
+
     .team_member {
-        width: 70%;
+        width: 80%;
         margin: auto;
-        padding-bottom: 3% 0; 
-    
+        padding-bottom: 3%; 
     
         .tm_content {
             .custom-layout(space-between, stretch);
             width: 100%;
             align-items: center;
             
-            
-        
             .tm_header {
+                width: 25%;
+                
                 h3 {
                     text-align: center;
                     
@@ -28,20 +54,18 @@
                 img{
                     display: inline-block;
                     width: 100%;
-                    
+                    border-radius: 50%;
                 }
             }
         
-            .bio {
-                padding: 5%;
-            }
+            
         }
     }
-
 
     .bio {
         text-align: center;
         padding-top: auto 0;
+        width: 70%;
     }
 }
 
