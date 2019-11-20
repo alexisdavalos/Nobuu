@@ -6,29 +6,51 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Minimalist Home Page</title>
     <link href="css/index.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script src="https://kit.fontawesome.com/a9a54486bf.js" crossorigin="anonymous"></script>
 </head>
 <header>
     <nav>
-        <div class="logo"><h2>NOBUU</h2></div>
+        <div class="logo active"><a href="index.html"><h2>NOBUU</h2></a></div>
         <div class="links-wrapper">
-            <div class="links">
+            <div class="links" id="links">
                 <a href="index.html">Home</a>
                 <a href="#">About Us</a>
                 <a href="#">Blog</a>
                 <a href="#">Contact</a>
                 <a href="#">Sign In</a>
             </div>   
-        </div> 
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
         </nav>
 </header>
 <body>
 <div class="container">
     <section class="home-slider-section">
         <div class="slider">
-            <img class="mySlides" src="https://images.pexels.com/photos/1054222/pexels-photo-1054222.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1000">
-            <img class="mySlides" src="https://images.pexels.com/photos/751373/pexels-photo-751373.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
-            <img class="mySlides" src="https://images.pexels.com/photos/1054222/pexels-photo-1054222.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+            <img class="mySlides" src="img/1.jpg">
         </div>
+        <div class="box-wrapper">
+                <div class="box">
+                        <h2>What is your main focus for today?</h2>
+                        <div class="typed">
+                            <span id="typed"></span>
+                        </div>   
+                    </div> 
+                <div class="icon-box">
+                        <div class="icon">
+                            <i class="fab fa-github fa-2x"></i>
+                        </div>
+                        <div class="icon">
+                                <i class="fab fa-facebook fa-2x"></i>
+                            </div>
+                            <div class="icon">
+                                    <i class="fab fa-twitter fa-2x"></i>
+                                </div>
+                </div>   
+            </div>
     </section>
 
     
@@ -53,37 +75,14 @@
                     <a href=""></a>
                 </nav>
             <p>Copyright Minimalist Home Page 2019</p>
-        
-            <script>
-                    var myIndex = 0;
-                    carousel();
-                    
-                    function carousel() {
-                      var i;
-                      var x = document.getElementsByClassName("mySlides");
-                      for (i = 0; i < x.length; i++) {
-                        x[i].style.display = "none";  
-                      }
-                      myIndex++;
-                      if (myIndex > x.length) {myIndex = 1}    
-                      x[myIndex-1].style.display = "block";  
-                      setTimeout(carousel, 5000); // Change image every 2 seconds
-                    }
-                    </script>
-        
         </footer>
 </div>
 
 	<!-- Scripts -->
     <script src="js/jquery.min.js"></script>
-    <script src="js/jquery.scrollex.min.js"></script>
-    <script src="js/jquery.scrolly.min.js"></script>
-    <script src="js/browser.min.js"></script>
-    <script src="js/breakpoints.min.js"></script>
-    <script src="js/util.js"></script>
-    <script src="js/main.js"></script>
     <script src="js/Particles/particles.js"></script>
     <script src="js/Particles/app.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
 </html>
