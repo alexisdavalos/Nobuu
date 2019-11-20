@@ -7,11 +7,17 @@ header{
         .custom-layout(center,center);
         width:75%;
         padding: 1% 0;
+        @media @phone{
+            width:100%;
+        }
         .logo{
             .custom-layout(flex-start,center);
             width:50%;
             h2{
                 color:@white;
+            }
+            a{
+                .clean-anchor();
             }
         }
         .links-wrapper{
@@ -20,6 +26,9 @@ header{
             .links{
                 .custom-layout(space-evenly,center);
                 width:100%;
+                @media @phone{
+                    display:none;
+                }
                 a{
                     .clean-anchor();
                     font-size: 1.4rem;
@@ -31,5 +40,49 @@ header{
         }
         
     }
+}
+
+@media @phone{
+
+    /* Style the navigation menu */
+nav {
+    overflow: hidden;
+    position: relative;
+    .links{
+        display:none;
+    }
+
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+ 
+  
+  /* Style navigation menu links */
+  nav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  /* Style the hamburger menu */
+  nav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  nav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Style the active link (or home/logo) */
+ 
+
 }
     
