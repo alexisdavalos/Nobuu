@@ -233,15 +233,18 @@ header nav .links-wrapper .links a {
   text-transform: uppercase;
   color: #FEFFFF;
 }
+
 header nav .icon {
   display: none;
 }
+
 @media (max-width: 500px) {
   /* Style the navigation menu */
   nav {
     overflow: hidden;
     position: relative;
     flex-direction: column;
+
   }
   nav .links {
     display: none;
