@@ -3,46 +3,76 @@
     padding-top:75px;
 }
 
+.mission {
+    padding-top: 5%;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+
+    h1 {
+        font-size: 6rem;
+        padding: 2%;
+    }
+}
+
+.team-intro-header {
+    text-align: center;
+    font-size: 4rem;
+    padding: 5%;
+}
+
 .team_content_section {
     padding: 3%;
+    display: flex;
+    flex-wrap: wrap;
 
     .team_member {
-        width: 70%;
+        
         margin: auto;
-        padding-bottom: 3% 0; 
-    
-    
-        .tm_content {
-            .custom-layout(space-between, stretch);
-            width: 100%;
-            align-items: center;
-            
-            
+        padding-bottom: 3% 0;
+        display: flex-column;
+        align-items: center;  
+        width: 35%; 
         
-            .tm_header {
-                h3 {
-                    text-align: center;
-                    
-                }
+        .tm_image {
             
-                img{
-                    display: inline-block;
-                    width: 100%;
-                    
-                }
-            }
-        
-            .bio {
-                padding: 5%;
+            
+                
+            img {
+                border-radius: 50%;
+                max-width: 30%;
+                margin: auto;
+                vertical-align: center;
+                
+                
             }
         }
+
+        .tm_name {
+            text-align: center;
+            
+            
+
+            a {
+                text-decoration: none;
+                font-size: 2rem;
+            }
+        }
+               
+        .bio {
+            padding: 5%;
+            border: solid black 1px;
+
+            p{ 
+                margin: auto;
+                width: 100%;
+            }
+        }
+        
     }
 
 
-    .bio {
-        text-align: center;
-        padding-top: auto 0;
-    }
+    
 }
 
 

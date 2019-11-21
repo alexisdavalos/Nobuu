@@ -461,32 +461,51 @@ header nav .icon:hover {
   background-color: #2B7A78;
   padding-top: 75px;
 }
-.team_content_section {
-  padding: 3%;
-}
-.team_content_section .team_member {
-  width: 70%;
-  margin: auto;
-  padding-bottom: 3% 0;
-}
-.team_content_section .team_member .tm_content {
-  display: flex;
-  justify-content: space-between;
-  align-items: stretch;
-  width: 100%;
-  align-items: center;
-}
-.team_content_section .team_member .tm_content .tm_header h3 {
+.mission {
+  padding-top: 5%;
+  width: 80%;
   text-align: center;
+  margin: auto;
 }
-.team_content_section .team_member .tm_content .tm_header img {
-  display: inline-block;
-  width: 100%;
+.mission h1 {
+  font-size: 6rem;
+  padding: 2%;
 }
-.team_content_section .team_member .tm_content .bio {
+.team-intro-header {
+  text-align: center;
+  font-size: 4rem;
   padding: 5%;
 }
-.team_content_section .bio {
+.team_content_section {
+  padding: 3%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.team_content_section .team_member {
+  margin: auto;
+  padding-bottom: 3% 0;
+  display: flex-column;
+  align-items: center;
+  width: 35%;
+}
+.team_content_section .team_member .tm_image img {
+  border-radius: 50%;
+  max-width: 30%;
+  margin: auto;
+  vertical-align: center;
+}
+.team_content_section .team_member .tm_name {
   text-align: center;
-  padding-top: auto 0;
+}
+.team_content_section .team_member .tm_name a {
+  text-decoration: none;
+  font-size: 2rem;
+}
+.team_content_section .team_member .bio {
+  padding: 5%;
+  border: solid black 1px;
+}
+.team_content_section .team_member .bio p {
+  margin: auto;
+  width: 100%;
 }
