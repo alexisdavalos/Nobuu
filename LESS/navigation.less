@@ -2,6 +2,15 @@ header{
     .custom-layout(center,center);
     width:100%;
     position:fixed;
+    z-index:1;
+    @media @tablet{
+        position:relative;
+        background-color:black;
+    }
+    @media @phone{
+        position:relative;
+        background-color:black;
+    }
     nav{
         .custom-layout(center,center);
         width:80%;
@@ -115,6 +124,34 @@ header{
         }//icon end
         
     }//nav end
+}
+
+
+footer{
+    width:100%;
+    .custom-layout(center,center);
+    flex-direction:column;
+    background: black;
+    nav{
+        padding:1%;
+        width:50%;
+        .links{
+            .custom-layout(center,center);
+            a{
+                margin:5%;
+                text-align:center;
+                .clean-anchor();
+                font-size: 1.4rem;
+                text-transform: uppercase;
+                color: @white;
+            }
+        }//end links
+    }//end nav
+    p{
+        color:@white;
+        margin: 3% 0;
+    }
+
 }
 .nav-colored{
     background-color:black;

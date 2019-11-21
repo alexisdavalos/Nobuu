@@ -35,15 +35,9 @@
         </nav>
 </header>
 <body onload="startTime()">
-<div class="container">
+<div class="container" onload="carousel()">
     <section class="home-slider-section">
-        <!-- <div class="slider">
-            <img class="mySlides" src="img/1.jpg">
-            <img class="mySlides" src="img/2.jpg">
-            <img class="mySlides" src="img/3.jpg">
-            <img class="mySlides" src="img/4.jpg">
-        </div> -->
-        <div class="box-wrapper">
+        <div class="slide-box-wrapper" id="box-wrapper">
                 <div class="box">
                         <div id="clock"></div>
                         <div class="Greeting"><h2>Good <span id="Day"></span>, classy.</h2></div>
@@ -56,29 +50,38 @@
                            <a href="https://github.com/Buildweek-Minimalist-Homepage" target="_blank"><i class="fab fa-github fa-3x"></i></a>
                         </div>
                         <div class="icon">
-                                <a href="https://github.com/Buildweek-Minimalist-Homepage" target="_blank"><i class="fab fa-facebook fa-3x"></i></a>
+                                <a href="#" target="_blank"><i class="fab fa-facebook fa-3x"></i></a>
                             </div>
                             <div class="icon">
-                                    <a href="https://github.com/Buildweek-Minimalist-Homepage" target="_blank"><i class="fab fa-twitter fa-3x"></i></a>
+                                    <a href="#" target="_blank"><i class="fab fa-twitter fa-3x"></i></a>
                                 </div>
                 </div>   
             </div>
     </section>
 
     
-    
-    <section class="section-2">
-    <!-- <div id="particles-js"></div> -->
+    <div class="section-title">
         <div class="pattern_overlayed">
-            <h2>Get Our App Now</h2>
+                <h2>What is NOBUU?</h2>
         </div>
-        <div class="content">
-            <h2>Title 1</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos in delectus doloremque debitis tenetur veniam magni recusandae officiis molestiae tempore. Commodi consectetur distinctio quos! Harum sapiente assumenda optio laborum repellat!</p>
         </div>
-      
+    <section class="about-section">
+        <div id="particles-js"></div>
+        <div class="section-wrapper">
+        <div class="box">
+               <img src="/img/mk-7.png">
+            </div>
+        <div class="box">
+            <h2>Minimalism Embodied</h2>
+            <p>Nobuu is a personal dashboard designed to eliminate distraction and provide inspiration, focus, and productivity. All while embodying minimalist styles and delivering them to your every day life. With Nobuu, less is more.</p>
+        </div>        
+    </div>
     </section>
-    
+    <div class="section-title">
+            <div class="pattern_overlayed">
+                    <h2>What is NOBUU?</h2>
+            </div>
+            </div>
     <section class="section-3">
         <div class="content">
                 <h2>Title 1</h2>
@@ -87,7 +90,13 @@
     </section>
     <footer>
             <nav>
-                    <a href=""></a>
+                    <div class="links" id="links">
+                            <a href="index.html">Home</a>
+                            <a href="about.html">About Us</a>
+                            <a href="#">Blog</a>
+                            <a href="#">Contact</a>
+                            <a href="#">Sign In</a>
+                        </div>  
                 </nav>
             <p>Copyright Minimalist Home Page 2019</p>
         </footer>
