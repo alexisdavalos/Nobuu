@@ -1,17 +1,18 @@
-// var myIndex = 0;
-// carousel();
 
-// function carousel() {
-//   var i;
-//   var x = document.getElementsByClassName("mySlides");
-//   for (i = 0; i < x.length; i++) {
-//     x[i].style.display = "none";  
-//   }
-//   myIndex++;
-//   if (myIndex > x.length) {myIndex = 1}    
-//   x[myIndex-1].style.display = "block";  
-//   setTimeout(carousel, 15000); // Change image every 6 seconds
-// } 
+//Changes Background every 10 seconds
+  var x = document.getElementById("box-wrapper");
+  var cycle = 0;
+  var allBackgrounds = [ "url('/img/1.jpg')", "url('/img/2.jpg')", "url('/img/3.jpg')","url('/img/4.jpg')"];
+    setInterval(function() {
+    if (cycle < 4) {
+      x.style.backgroundImage = allBackgrounds[cycle];
+      cycle += 1;
+    } else { 
+      cycle = 0;
+    }
+  }, 8000);
+
+
 
 //Typed JS 
 var typed = new Typed('#typed', {
@@ -44,14 +45,14 @@ function startTime() {
   document.getElementById('clock').innerHTML =
   h + ":" + m ;
   var t = setTimeout(startTime, 500);
-  if (h > 12){
-    document.getElementById('Day').innerHTML = "Afternoon"
+  if (h >= 12){
+    document.getElementById('Day').innerHTML = "Afternoon";
   } 
-  if (h > 17){
-    document.getElementById('Day').innerHTML = "Evening"
+  if (h >= 17){
+    document.getElementById('Day').innerHTML = "Evening";
   }
-  if (h > 24){
-    document.getElementById('Day').innerHTML = "Morning"
+  if (h >= 24){
+    document.getElementById('Day').innerHTML = "Morning";
   }
 }
 function checkTime(i) {
@@ -63,13 +64,19 @@ function checkTime(i) {
 var myNav = document.getElementById('navBar');
 window.onscroll = function () { 
     'use strict';
-    if (window.scrollTop >= 50) {
-        myNav.classList.add("nav-colored");
-        myNav.classList.remove("nav-transparent");
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        if(document.documentElement.clientWidth > 800){
+          myNav.classList.add("nav-colored");
+          myNav.classList.remove("nav-transparent");
+        }
+      
     } 
-    else {
-        myNav.classList.add("nav-colored");
-        myNav.classList.remove("nav-transparent");
+    else if (document.body.scrollTop === 0) {
+        if(document.documentElement.clientWidth > 800){
+          myNav.classList.add("nav-transparent");
+          myNav.classList.remove("nav-colored");
+        }
+       
     }
 
     
