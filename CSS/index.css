@@ -511,10 +511,17 @@ header nav .icon:hover {
 }
 .team_content_section .team_member {
   margin: auto;
-  padding-bottom: 3% 0;
-  display: flex-column;
+  padding: 3% 0;
+  display: flex;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
   width: 35%;
+}
+.team_content_section .team_member .tm_image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .team_content_section .team_member .tm_image img {
   border-radius: 50%;

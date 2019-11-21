@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="/css/index.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script src="https://kit.fontawesome.com/a9a54486bf.js" crossorigin="anonymous"></script>
     <title>About Us</title>
 </head>
-<header>
+<header id="navBar">
         <nav>
             <div class="logo active"><a href="index.html"><h2>NOBUU</h2></a></div>
             <div class="links-wrapper">
@@ -17,15 +19,16 @@
                     <a href="#">Blog</a>
                     <a href="#">Contact</a>
                     <a href="#">Sign In</a>
-                </div>
-                <div class="mobile-links" id="mobile-links">
-                        <a href="index.html">Home</a>
-                        <a href="about.html">About Us</a>
-                        <a href="#">Blog</a>
-                        <a href="#">Contact</a>
-                        <a href="#">Sign In</a>
-                    </div>      
+    
+                </div>    
             </div>
+            <div class="mobile-links" id="mobile-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Sign In</a>
+                </div>   
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                     <i class="fa fa-bars"></i>
                   </a>
@@ -36,6 +39,9 @@
        
     <div class="mission">
         <h1 class="main">Minimalist Homepage</h1>
+        <div class="typed">
+                <h3>Daily <span id="typed"></span> On Your New Home Tab</h3> 
+        </div>   
         <p>While having Google as your homepage may be a sensible choice, why not spice it up a little bit? The Nobuu Minimalist Homepage is exactly what you'd imagine it is: stylish, functional, minimalist and modern. Choose from a set of themes (light, dark, etc) and from a number of widgets (TBD). And of course, the Google search bar will be there too.</p>
     </div>
          
@@ -156,17 +162,8 @@
 
     
     <!-- Scripts -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery.scrollex.min.js"></script>
-    <script src="js/jquery.scrolly.min.js"></script>
-    <script src="js/browser.min.js"></script>
-    <script src="js/breakpoints.min.js"></script>
-    <script src="js/util.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/Particles/particles.js"></script>
-    <script src="js/Particles/app.js"></script>
 
 
-
+    <script src="js/main.js" type ="text/javascript" defer="defer"></script>
 </body>
 </html>
