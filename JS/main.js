@@ -1,21 +1,21 @@
-var myIndex = 0;
-carousel();
+// var myIndex = 0;
+// carousel();
 
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 15000); // Change image every 6 seconds
-} 
+// function carousel() {
+//   var i;
+//   var x = document.getElementsByClassName("mySlides");
+//   for (i = 0; i < x.length; i++) {
+//     x[i].style.display = "none";  
+//   }
+//   myIndex++;
+//   if (myIndex > x.length) {myIndex = 1}    
+//   x[myIndex-1].style.display = "block";  
+//   setTimeout(carousel, 15000); // Change image every 6 seconds
+// } 
 
 //Typed JS 
 var typed = new Typed('#typed', {
-    strings: ['positivity', 'motivation', 'news', 'alerts'],
+    strings: ['Positivity', 'Motivation', 'News', 'Alerts'],
     backSpeed: 80,
     typeSpeed: 80,
     loop: true
@@ -62,14 +62,14 @@ function checkTime(i) {
 // scroll nav bar
 var myNav = document.getElementById('navBar');
 window.onscroll = function () { 
-    
-    if (document.body.scrollTop > 0) {
+    'use strict';
+    if (window.scrollTop >= 50) {
         myNav.classList.add("nav-colored");
         myNav.classList.remove("nav-transparent");
     } 
     else {
-        myNav.classList.add("nav-transparent");
-        myNav.classList.remove("nav-colored");
+        myNav.classList.add("nav-colored");
+        myNav.classList.remove("nav-transparent");
     }
 
     
