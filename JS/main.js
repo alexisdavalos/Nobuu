@@ -1,5 +1,5 @@
 
-//Changes Background every 10 seconds
+//Changes wrapper every 10 seconds
   var x = document.getElementById("box-wrapper");
   var cycle = 0;
   var allBackgrounds = [ "url('/img/1.jpg')", "url('/img/2.jpg')", "url('/img/3.jpg')","url('/img/4.jpg')"];
@@ -12,14 +12,18 @@
     }
   }, 8000);
 
-
-
 //Typed JS 
 var typed = new Typed('#typed', {
     strings: ['Positivity', 'Motivation', 'News', 'Alerts'],
     backSpeed: 80,
     typeSpeed: 80,
     loop: true
+});
+var names = new Typed('#names', {
+  strings: ['Jor', 'Alexis', 'Jason', 'Edwin', 'Cameron', 'Ethan'],
+  backSpeed: 140,
+  typeSpeed: 140,
+  loop: true
 });
 
 //mobile menu
@@ -75,9 +79,22 @@ window.onscroll = function () {
         if(document.documentElement.clientWidth > 800){
           myNav.classList.add("nav-transparent");
           myNav.classList.remove("nav-colored");
-        }
-       
+        }  
     }
-
-    
 };
+
+//review carousel
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("review_slides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none"; 
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1} 
+  x[slideIndex-1].style.display = "block"; 
+  setTimeout(carousel, 7000); 
+}
