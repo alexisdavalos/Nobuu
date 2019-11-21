@@ -1,5 +1,5 @@
 .about-container {
-    background-color: @secondary-color;
+    background-color: @white;
     padding-top:75px;
 }
 
@@ -8,23 +8,70 @@
     width: 80%;
     text-align: center;
     margin: auto;
-
+    
     h1 {
         font-size: 6rem;
         padding: 2%;
     }
+ 
+    p {
+        padding: 3%;
+    }
+
+    .typed {
+        background-color: @silver;
+        padding: 2% 0;
+        
+    }
+
+    @media @phone{
+        h1{
+           font-size: 4rem;
+           padding-bottom: 5%;
+        }
+
+        p {
+            text-align: justify;
+            padding-top: 5%;
+        }
+
+        .typed {
+            
+            h3 {
+                font-size: 2rem;
+            }
+            
+            #typed {
+                font-size: 2rem;
+            }
+            
+
+        }
+
+
+    }
+    
 }
+
+
 
 .team-intro-header {
     text-align: center;
-    font-size: 4rem;
-    padding: 5%;
+    padding: 3%;
+
+    h2 {
+        @media @phone {
+            font-size: 3rem;
+        }
+    }
 }
 
 .team_content_section {
-    padding: 3%;
+    
     display: flex;
     flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
 
     .team_member {
         
@@ -33,6 +80,7 @@
         .custom-layout(center,center);
         flex-direction:column;
         width: 35%; 
+        
         
         .tm_image {
             .custom-layout(center,center);
@@ -49,27 +97,44 @@
         .tm_name {
             text-align: center;
             
-            
-
             a {
                 text-decoration: none;
                 font-size: 2rem;
+                vertical-align: middle;
+                color: @silver;
+            }
+
+            @media @phone{
+                h3 {
+                    font-size: 2rem;
+                }
             }
         }
                
         .bio {
             padding: 5%;
-            border: solid black 1px;
+            background-color: #e9e9e9;
+            margin: 2px;
+            
 
             p{ 
                 margin: auto;
                 width: 100%;
+                
+            }
+
+            @media @phone{
+                display: none;
             }
         }
-        
+      
+        @media @phone {
+            padding: 5% 0;
+        }
+
     }
 
-
+    
     
 }
 
