@@ -6,11 +6,13 @@
     setInterval(function() {
     if (cycle < 4) {
       x.style.backgroundImage = allBackgrounds[cycle];
+      x.style.transition = 'background 1s linear;'
+      document
       cycle += 1;
     } else { 
       cycle = 0;
     }
-  }, 7000);
+  }, 4000);
 
 //Typed JS 
 var typed = new Typed('#typed', {
