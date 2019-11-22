@@ -289,27 +289,6 @@ header nav .mobile-links {
   width: 100%;
   background: #191919;
 }
-@media (max-width: 800px) and (min-width: 501px) {
-  header nav a {
-    color: white;
-    padding: 26px 27px;
-    text-decoration: none;
-    font-size: 17px;
-    display: block;
-  }
-  header nav a:hover {
-    background-color: black;
-  }
-}
-@media (max-width: 500px) {
-  header nav a {
-    color: white;
-    padding: 26px 27px;
-    text-decoration: none;
-    font-size: 17px;
-    display: block;
-  }
-}
 header nav .icon {
   display: none;
 }
