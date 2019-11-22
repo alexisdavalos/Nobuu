@@ -49,7 +49,7 @@ function startTime() {
   if (h >= 17){
     document.getElementById('Day').innerHTML = "Evening";
   }
-  if (h >= 24){
+  if (h >= 0){
     document.getElementById('Day').innerHTML = "Morning";
   }
 }
