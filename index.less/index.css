@@ -413,7 +413,6 @@ footer p {
 .home-slider-section .slide-box-wrapper {
   padding: 10%;
   background: #000000 url('/img/1.jpg');
-  transition: background 1s linear;
   background-size: cover;
   height: 100vh;
   display: flex;
