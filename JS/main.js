@@ -19,12 +19,6 @@ var typed = new Typed('#typed', {
     typeSpeed: 80,
     loop: true
 });
-var names = new Typed('#names', {
-  strings: ['Jor', 'Alexis', 'Jason', 'Edwin', 'Cameron', 'Ethan'],
-  backSpeed: 140,
-  typeSpeed: 140,
-  loop: true
-});
 
 //mobile menu
 function myFunction() {
@@ -74,7 +68,7 @@ window.onscroll = function () {
           myNav.classList.remove("nav-transparent");
         }
       
-    } 
+    }
     else if (document.body.scrollTop === 0) {
         if(document.documentElement.clientWidth > 800){
           myNav.classList.add("nav-transparent");

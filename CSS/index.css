@@ -636,6 +636,9 @@ footer p {
   position: absolute;
   z-index: -1;
 }
+#aboutNav {
+  background-color: black;
+}
 .about-container {
   background-color: #FEFFFF;
   padding-top: 75px;
