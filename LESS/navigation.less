@@ -77,7 +77,7 @@ header{
         .mobile-links{
             display:none;
             width:100%;
-            background:@main-color;
+            background:#191919;
         }
         a{
             @media @tablet{       
@@ -135,15 +135,22 @@ footer{
     nav{
         padding:1%;
         width:50%;
+        @media @phone{
+            width: 100%;
+        }
+        @media @tablet{
+            width: 100%;
+        }
         .links{
             .custom-layout(center,center);
             a{
-                margin:5%;
+                margin:5% 0;
                 text-align:center;
                 .clean-anchor();
                 font-size: 1.4rem;
                 text-transform: uppercase;
                 color: @white;
+                width:100%;
             }
         }//end links
     }//end nav

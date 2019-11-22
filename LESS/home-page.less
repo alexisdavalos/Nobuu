@@ -1,11 +1,3 @@
-h2{
-    @media @phone{
-        font-size: 1.5rem;
-    }
-    @media @tablet{
-        font-size: 1.9rem;
-    }
-}
 .home-slider-section{
     .custom-layout(center,center);
     .slider{
@@ -92,10 +84,10 @@ h2{
                 }
                 @media @phone{
                     font-size: 1.3rem;
-                    width:75%;
+                    width:80%;
                 }
                 @media @tablet{
-                    width:75%;
+                    width:80%;
                     font-size: 1rem;
                 }
                 
@@ -139,7 +131,7 @@ h2{
         }
     }
 }
-.about-section{
+.even-split-section{
     .custom-layout(center,center);
     .section-wrapper{
         max-width:100%;
@@ -164,16 +156,68 @@ h2{
             }
             h2{
                 margin-bottom:3%;
+                text-align:center;
+                font-weight:600;
+                font-size: 3rem;
+                @media @tablet{
+                    font-size: 2.5rem;
+                    
+                }
             }
             p{
                 border-left: solid 5px black;
-                padding-left: 1%;
+                padding: 2%;
+                margin-top:5%;
+                background:#e6e6e691;
             }
         }
     }
 }
+
+.section-parallax{
+    padding: 0;
+    background-image: url(/img/parallax-1.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .content{
+        .custom-layout(center,center);
+        flex-direction:column;
+        .box{
+            .custom-layout(center,center);
+            img{
+                margin-bottom: -20%;
+                width:50%;
+            }
+        }
+        
+    }
+}
+
+.reviews{
+    @media @tablet{
+        margin-top:15%;
+    }
+    @media @phone{
+        margin-top:15%;
+    }
+    .review_slides{
+        .content{
+            .custom-layout(center,center);
+            flex-direction:column-reverse;
+            .stars{
+                width:100%;
+                .custom-layout(center,center);
+            }
+        }
+    }
+}
+
+.chrome_store{
+    padding:5%;
+}
 #particles-js{
-	height: 100vh;
 	width:100%;
     background-color:transparent;
     position:absolute;
