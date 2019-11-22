@@ -10,7 +10,7 @@
     } else { 
       cycle = 0;
     }
-  }, 8000);
+  }, 7000);
 
 //Typed JS 
 var typed = new Typed('#typed', {
