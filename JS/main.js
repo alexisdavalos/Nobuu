@@ -1,12 +1,11 @@
 
-//Changes wrapper every 10 seconds
-  var x = document.getElementById("box-wrapper");
-  var cycle = 0;
-  var allBackgrounds = [ "url('/img/1.jpg')", "url('/img/2.jpg')", "url('/img/3.jpg')","url('/img/4.jpg')"];
+//Changes wrapper every 4 seconds
+  const x = document.getElementById("box-wrapper");
+  let cycle = 0;
+  let allBackgrounds = [ "url('/img/1.jpg')", "url('/img/2.jpg')", "url('/img/3.jpg')","url('/img/4.jpg')"];
     setInterval(function() {
     if (cycle < 4) {
       x.style.backgroundImage = allBackgrounds[cycle];
-      x.style.transition = 'background 1s linear;'
       document
       cycle += 1;
     } else { 
@@ -15,7 +14,7 @@
   }, 4000);
 
 //Typed JS 
-var typed = new Typed('#typed', {
+let typed = new Typed('#typed', {
     strings: ['Positivity', 'Motivation', 'News', 'Alerts'],
     backSpeed: 80,
     typeSpeed: 80,
@@ -25,7 +24,7 @@ var typed = new Typed('#typed', {
 //mobile menu
 function myFunction() {
 
-  var x = document.getElementById("mobile-links");
+  let x = document.getElementById("mobile-links");
 
   if (x.style.display === "block") {
     x.style.display = "none";
@@ -36,22 +35,22 @@ function myFunction() {
 
 //clock 
 function startTime() {
-  var today = new Date();
-  var h = today.getHours();
-  var m = today.getMinutes();
-  var s = today.getSeconds();
+  let today = new Date();
+  let h = today.getHours();
+  let m = today.getMinutes();
+  let s = today.getSeconds();
   m = checkTime(m);
   s = checkTime(s);
   document.getElementById('clock').innerHTML =
   h + ":" + m ;
-  var t = setTimeout(startTime, 500);
+  let t = setTimeout(startTime, 500);
   if (h >= 12){
     document.getElementById('Day').innerHTML = "Afternoon";
   } 
   if (h >= 17){
     document.getElementById('Day').innerHTML = "Evening";
   }
-  if (h >= 0){
+  if (h >= 0 && h < 12){
     document.getElementById('Day').innerHTML = "Morning";
   }
 }
@@ -61,7 +60,7 @@ function checkTime(i) {
 }
 
 // scroll nav bar
-var myNav = document.getElementById('navBar');
+let myNav = document.getElementById('navBar');
 window.onscroll = function () { 
     'use strict';
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
@@ -80,12 +79,12 @@ window.onscroll = function () {
 };
 
 //review carousel
-var slideIndex = 0;
+let slideIndex = 0;
 carousel();
 
 function carousel() {
-  var i;
-  var x = document.getElementsByClassName("review_slides");
+  let i;
+  let x = document.getElementsByClassName("review_slides");
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none"; 
   }
@@ -94,3 +93,4 @@ function carousel() {
   x[slideIndex-1].style.display = "block"; 
   setTimeout(carousel, 7000); 
 }
+
