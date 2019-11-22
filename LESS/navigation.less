@@ -79,7 +79,27 @@ header{
             width:100%;
             background:#191919;
         }
-
+        a{
+            @media @tablet{       
+                    color: white;
+                    padding: 26px 27px;
+                    text-decoration: none;
+                    font-size: 17px;
+                    display: block;
+                    &:hover{
+                        background-color:black;
+                    }
+      
+            }//media end
+            @media @phone{       
+                color: white;
+                padding: 26px 27px;
+                text-decoration: none;
+                font-size: 17px;
+                display: block;
+  
+        }//media end
+        }//anchor end
         .icon{
             display:none;
             @media @tablet{
