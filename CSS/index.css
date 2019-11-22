@@ -201,9 +201,6 @@ header {
     background-color: black;
   }
 }
-header .solid {
-  background-color: black;
-}
 header nav {
   display: flex;
   justify-content: center;
