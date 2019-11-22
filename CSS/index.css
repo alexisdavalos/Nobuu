@@ -201,6 +201,9 @@ header {
     background-color: black;
   }
 }
+header .solid {
+  background-color: black;
+}
 header nav {
   display: flex;
   justify-content: center;
@@ -635,6 +638,9 @@ footer p {
   background-color: transparent;
   position: absolute;
   z-index: -1;
+}
+#aboutNav {
+  background-color: black;
 }
 .about-container {
   background-color: #FEFFFF;
