@@ -651,6 +651,7 @@ footer p {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: gold;
 }
 .chrome_store {
   padding: 5%;
