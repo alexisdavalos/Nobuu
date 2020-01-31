@@ -448,9 +448,7 @@ footer p {
   }
 }
 .home-slider-section .slide-box-wrapper {
-  background: url('/img/1.jpg');
   transition: background 1s linear;
-  background-size: cover;
   height: 100vh;
   display: flex;
   justify-content: center;
