@@ -560,7 +560,7 @@ footer p {
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url(/img/overlay.png);
+  background-image: url(img/overlay.png);
 }
 .section-title .pattern_overlayed h2 {
   color: white;
@@ -632,7 +632,7 @@ footer p {
 }
 .section-parallax {
   padding: 0;
-  background-image: url(/img/parallax-1.jpg);
+  background-image: url(img/parallax-1.jpg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
